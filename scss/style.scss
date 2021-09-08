@@ -1,0 +1,133 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 30px;
+    background-image: linear-gradient(rgb(85, 201, 85), lavender);
+  }
+  
+  .logo-size {
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  
+  .carousel-caption {
+    background-color: royalblue;
+  }
+  
+  .container-fluid {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .titulosImportantes {
+    padding: 40px;
+    font-size: 30px;
+    color: sienna;
+    text-align: center;
+  }
+  img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 0 20px 20px rgba(0,0,0,.9);
+    transition: .5s;
+    bottom: -100%;
+}
+  
+  
+  .newsletter {
+    color: royalblue;
+    padding: 40px;
+    margin: 0;
+    font-size: 30px;
+  }
+
+  .jumbotron {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+  }
+  .h1__titulosImportantes--tamanioColor{
+    padding: 40px;
+    font-size: 30px;
+    text-align: center;
+    color: sienna;
+  }
+  .form__background--color{
+      background-color:lavender;
+  }
+
+  .h1__titulo--color{
+    padding: 40px;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+  }
+  .h1__titulo--color2{
+    background-color: rgb(85, 201, 85);
+    padding: 40px;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+  }
+  .section__videoYoutube--tamanio{
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+  }
+
+  @mixin lista ($fondo){
+    color: black;
+    background-color: $fondo;
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+    padding: 10px;
+  }
+  .lista1{
+    @include lista(blue);
+  }
+  .lista2{
+    @include lista(orangered);
+  }
+  .lista3{
+    @include lista(red);
+  }
+  .lista4{
+    @include lista(yellow);
+  }
+  .pruebaExtended{
+    color: black;
+    padding: 10px;
+    background-color:rgb(85, 201, 85);
+  }
+  .optionBasico{
+    @extend .pruebaExtended;
+    background-color:green;
+  }
+  .optionAmateur{
+    @extend .pruebaExtended;
+    background-color:yellow;
+  }
+  .optionProfesional{
+    @extend .pruebaExtended;
+    background-color:red;
+  }
+  @mixin carousel1 ($fondo){
+    color: white;
+    background-color: $fondo;
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+    padding: 10px;
+  }
+  .carousel2{
+    @include carousel1(sienna)
+  }
+  .carousel3{
+    @include carousel1(green)
+  }
+  .nav-item:hover{
+    background: #55c955;
+  }
